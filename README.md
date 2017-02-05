@@ -1,3 +1,9 @@
+AZSI Plantilla WordPress
+========================
+
+Esta platilla wordpress está basada en underscore. La rama master es una personalización de la Plantilla base. 
+
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
