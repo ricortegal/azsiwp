@@ -1,0 +1,28 @@
+{
+  "name": "azsiwp",
+  "version": "0.0.1",
+  "description": "Plantilla wordpres base azsi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricortegal/azsiwp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plantilla",
+    "base",
+    "underscore"
+  ],
+  "author": "Ricardo Ortega Galiana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricortegal/azsiwp/issues"
+  },
+  "homepage": "https://github.com/ricortegal/azsiwp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
