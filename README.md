@@ -1,7 +1,8 @@
 AZSI Plantilla WordPress
 ========================
 
-Esta platilla wordpress está basada en underscore. La rama master es una personalización de la Plantilla base. 
+Esta platilla wordpress está basada en underscore. La rama master es una personalización de la plantilla base a la que 
+se ha añadido un proyecto nodejs mediante npm. Las tareas de generación de proyecto se hace mediante gulp.
 
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)

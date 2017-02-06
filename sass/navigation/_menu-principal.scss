@@ -1,0 +1,55 @@
+#menu-principal-header {
+    display: block;
+    height: $altura-barra-navegacion;
+    margin: 0;
+    padding: 0;
+    background-color: $color-barra-navegacion;
+    position:fixed;
+    width: 100%;
+    top:0;
+    z-index: 9999;
+}
+
+#menu-principal-header  h1 {
+    display: block;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+}
+
+#menu-principal-header  h1 a {
+    display: block;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    color: $color-texto-principal-oscuro;
+}
+
+#menu-principal-header h2 {
+    display: block;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: $color-base-medio;
+    margin: 0.15em 0 0 0;
+    padding: 0;
+    position: relative;
+    top: -0.8em;
+}
+
+#titulo-header {
+        float: left;
+}
+
+#titulo-header {
+    width: $ancho-titulo-header-menu;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+}
+
+#main-navigation {
+    
+}

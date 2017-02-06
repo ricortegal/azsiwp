@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/ricortegal/azsiwp#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {}
 }
