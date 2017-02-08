@@ -1,19 +1,16 @@
 #menu-principal-header {
-    display: block;
     height: $altura-barra-navegacion;
     margin: 0;
     padding: 0;
     background-color: $color-barra-navegacion;
-    position:fixed;
     width: 100%;
-    top:0;
     z-index: 9999;
 }
 
 #menu-principal-header  h1 {
     display: block;
     font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
+    font-family: $font__header;
     margin: 0;
     padding: 0;
     text-decoration:none;
@@ -22,7 +19,7 @@
 #menu-principal-header  h1 a {
     display: block;
     font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
+    font-family: $font__header;
     margin: 0;
     padding: 0;
     text-decoration:none;
@@ -50,6 +47,4 @@
     padding-top: 0.3em;
 }
 
-#main-navigation {
-    
-}
+

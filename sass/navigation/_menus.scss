@@ -1,94 +1,90 @@
 .main-navigation {
-	display: inline-block;
-	float: left;
-	ul {
-		display: none;
-
-		//up to md show menu
-		@include media-breakpoint-up(md) {
-			display: inline-table;
+    display: inline-block;
+    ul {
+        display: none;
+        //up to md show menu
+        @include media-breakpoint-up(md) {
+            display: inline-table;
+            position: relative;
             padding: 0;
             margin: 0;
             list-style: none;
+        }
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        ul {
+            display: none;
+            position: absolute;
+            width: $ancho-titulo-header-submenu;
+            li {
+                height: 100%;
+                width: inherit;
+                float: left;
+                a {
+                    padding-top: 0.4em;
+                    padding-bottom: 0.4em;
+                    font-size: 0.8em;
+                    background: $color-elemento-menu-desplegable;
+                    color: $color-texto-principal-claro;
+                }
+            } // ul ul li a
+        }
+        li {
             position: relative;
-		}
-		
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
+            height: $altura-barra-navegacion;
+            display: inline-block;
+            a {
+                display: block;
+                text-decoration: none;
+                height: 100%;
+                padding-top: $altura-barra-navegacion - 2em;
+                padding-left: $separacion-elementos-menu-navegacion;
+                padding-right: $separacion-elementos-menu-navegacion;
+                color: $color-texto-principal-oscuro;
+            }
+            &:hover>a,
+            &.focus>a {
+                background: $color-elemento-menu-seleccionado;
+                color: $color-seleccionado;
+            }
+            &:hover>ul,
+            &.focus>ul {
+                display: block;
+            }
+            &:hover>ul>li>a,
+            &.focus>ul>li>a {}
+        } //nav ul li
+        a {
+            display: block;
+            text-decoration: none;
+        }
+        .current_page_item>a,
+        .current-menu-item>a,
+        .current_page_ancestor>a,
+        .current-menu-ancestor>a {
+            background-color: $color-elemento-menu-desplegable;
+            color: $color-seleccionado;
+        }
+    } // .main_navigator ul
+} // .main-navigation
 
 /* Small menu. */
+
 .menu-toggle {
-//up to md no display toogle menu
-@include media-breakpoint-up(md) {
-	 	display: none;
-	}
+    //up to md no display toogle menu
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
 }
 
 .menu-toggle,
-.main-navigation.toggled ul {
-
-}
+.main-navigation.toggled ul {}
 
 // @media screen and (min-width: 37.5em) {
 // 	.menu-toggle {
@@ -98,27 +94,20 @@
 // 		display: block;
 // 	}
 // }
-
-
-
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
-}
+// .comment-navigation,
+// .posts-navigation,
+// .post-navigation {
+// 	.site-main & {
+// 		margin: 0 0 1.5em;
+// 		overflow: hidden;
+// 	}
+// 	.nav-previous {
+// 		float: left;
+// 		width: 50%;
+// 	}
+// 	.nav-next {
+// 		float: right;
+// 		text-align: right;
+// 		width: 50%;
+// 	}
+// }
